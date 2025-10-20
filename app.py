@@ -20,7 +20,7 @@ def extract_text():
     if 'image' not in request.files:
         return jsonify({"error": "No image uploaded"}), 400
 
-    file = request.files['image']
+    file = request.files['data']
     image_bytes = file.read()
 
     try:
